@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "abc-ginto-plus";
+  src: url("./Assets/ABC_Ginto/ABCGintoPlusVariable/ABCGintoPlusVariable-Trial.woff2") format("woff2-variations"),
+       url("./Assets/ABC_Ginto/ABCGintoPlusVariable/ABCGintoPlusVariable-Trial.woff") format("woff-variations"),
+       url("./Assets/ABC_Ginto/ABCGintoPlusVariable/ABCGintoPlusVariable-Trial.ttf") format("truetype-variations");
+  font-weight: 300 700;
+}
+
+*{
+	font-family: abc-ginto-plus;
+	font-variation-settings: 'wght' 400;
+}
+
+body{
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.playspace{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.axes {
+  padding: 1em;
+}
+
+.buttons {
+  margin-left: 1em;
+}
+
+/*meter*/.axis {
+  min-width: 200px;
+  margin: 1em;
+}
+
+.button {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  padding: 1em;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAAxJREFUCNdjYPjPAAACAgEAqiqeJwAAAABJRU5ErkJggg==);
+  background-size: 0% 0%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.pressed {
+  border: 1px solid red;
+}
+
+.touched::after {
+  content: "touch";
+  display: block;
+  position: absolute;
+  margin-top: -0.2em;
+  margin-left: -0.5em;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.changeMe{
+	font-size: 10em;
+}
+
+.playarea{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
